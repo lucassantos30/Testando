@@ -12,13 +12,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        @media (max-width: 1035px) {
+            .container {
+                flex-direction: column;
+            }
         }
 
         .container .card {
             position: relative;
             width: 445px;
-            height: 230px;
+            height: 205px;
             padding: 15px;
             background: linear-gradient(60deg,#151516 0%, #1d2229 100%);
             overflow: hidden;
@@ -116,14 +123,47 @@
             opacity:0;
             top: 80px;
         }
-
+        
         .container .card:hover .foto{
             filter: grayscale(0%);
             width: 120%;
         }
 
+        .container .card2 .foto{
+            background-image: url(imagens/jinx_09.jpg);
+            transition: 0.3s ease;
+        }
 
+        .container .card2 button {
+            background-color: #26c3a1;
+        }
 
+        .container .card3 .foto{
+            background-image: url(imagens/jinx_07_skin1.jpg);
+            transition: 0.3s ease;
+        }
+
+        .container .card3 button{
+            background-color: #1ECDD9;
+        }
+
+        .container .card4 .foto{
+            background-image: url(imagens/jinx_08_skin2.jpg);
+            transition: 0.3s ease;
+        }
+
+        .container .card4 button{
+            background-color: #1ED97C;
+        }
+
+        .container .card5 .foto{
+            background-image: url(imagens/jinx_08_skin3.jpg);
+            transition: 0.3s ease;
+        }
+
+        .container .card5 button{
+            background-color: #1D95CF;
+        }
     </style>
 </head>
 
@@ -133,7 +173,38 @@
     <div class="container">
         <div class="card">
             <h2>Jinx</h2>
-            <p> qualquer informação aqui para testar, vou ajustar depois mesmo</p>
+            <p> aqui cabem 5 linhas de texto </p>
+            <span>Passe o mouse</span>
+            <div class="foto"></div>
+            <button></button>
+        </div>
+
+        <div class="card card2"> <!--card = pai , card2 = filho-->
+            <h2>Jinx</h2>
+            <p> aqui cabem 5 linhas de texto </p>
+            <span>Passe o mouse</span>
+            <div class="foto"></div>
+            <button></button>
+        </div>
+
+        <div class="card card3"> 
+            <h2>Jinx</h2>
+            <p> aqui cabem 5 linhas de texto </p>
+            <span>Passe o mouse</span>
+            <div class="foto"></div>
+            <button></button>
+        </div>
+
+        <div class="card card4"> 
+            <h2>Jinx</h2>
+            <p> aqui cabem 5 linhas de texto </p>
+            <span>Passe o mouse</span>
+            <div class="foto"></div>
+            <button></button>
+        </div>
+        <div class="card card5"> 
+            <h2>Jinx</h2>
+            <p> aqui cabem 5 linhas de texto </p>
             <span>Passe o mouse</span>
             <div class="foto"></div>
             <button></button>
