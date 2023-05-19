@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site teste para curso de github</title>
+
+    <style>
+        .galeria {
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
+        .galeria > div {
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all 1s cubic-bezier(.25, .4, .45, 1.4);
+        }
+
+        .galeria > div:hover {
+            flex: 5;
+            border-radius: 1rem;
+
+            /* DEIXAR RESPONSIVO PARA TELAS GRANDES*/
+    </style>
 </head>
 <body>
     <h1>Olá Mundo!</h1>
+    <div class="galeria">
+        <div style="background-image: url(imagens/projeto\ 1.png);"></div>
+        <div style="background-image: url(imagens/projeto\ 2.png);"></div>
+        <div style="background-image: url(imagens/projeto\ 3.png);"></div>
+        <div style="background-image: url(imagens/projeto\ 4.png);"></div>
+        <div style="background-image: url(imagens/projeto\ 5.png);"></div>
+    </div>
+
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem corrupti repudiandae ab amet eveniet expedita esse aperiam, minima minus vero quia ut, porro molestiae, odio autem a! Voluptatibus, animi ea?
     Obcaecati adipisci quasi sed, voluptas porro assumenda non omnis praesentium ipsum illum necessitatibus provident voluptatum impedit doloremque? Animi voluptate repellat asperiores veritatis? Laudantium exercitationem porro autem beatae ut ipsam temporibus.</p>
 </body>
